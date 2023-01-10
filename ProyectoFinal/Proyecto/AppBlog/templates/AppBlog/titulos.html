@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'AppBlog/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="{% url 'inicio' %}">Inicio</a>
+                <a class="navbar-brand" href="{% url 'crearTitulo' %}">Crear titulo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'mensajes' %}">Mensajes</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'titulos' %}">Titulos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'login' %}">Login</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'about' %}">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'registro' %}">Registro</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'perfil' %}">Perfil</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>BLOG</h1>
+                            <span class="subheading">.....................................................................................</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="detallesTitulo.html">
+                            <h2 class="post-title"> AÑO NUEVO</h2>
+                            <h3 class="post-subtitle">
+                                Es un año común comenzado en domingo en el calendario gregoriano. Es también el número 2023 anno Domini o de la designación de era cristiana, además del vigésimo tercero año del siglo xxi y del tercer milenio. Es el tercer año de la tercera década del siglo xxi y el cuarto del decenio de los 2020.
+                                
+                                El año 2023 es:
+                                
+                                -El Año del Conejo, de acuerdo con el horóscopo chino.
+                                -El Año Internacional del Mijo, de acuerdo con la ONU.
+                                -El Año Internacional del Diálogo como Garantía de Paz, según la ONU.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posteado por
+                            <a href="#!">BLOGBLOGBLOG</a>
+                            diciembre 30, 2022
+                            <p class="text-center">
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="detallesTitulo.html">
+                            <h2 class="post-title">Un acuario inteligente</h2></a>
+                            <h3 class="post-subtitle">Admite la alimentación remota lo último de Xiaomi para el hogar conectado.
+                            Xiaomi ha presentado recientemente el Mijia SmartAquarium, un aucario 
+                            inteligente capaz de mantener el agua limpia de forma autónoma hasta 
+                            seis meses sin cambiarla y que permite la alimentación remota de los peces.</h3>
+                            
+                        <p class="post-meta">
+                            Posteado por
+                            <a href="#!">BLOGBLOGBLOG</a>
+                            enero 1, 2023
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="detallesTitulo.html">
+                            <h2 class="post-title">Los 5 cristales que estabilizarán tu energía</h2>
+                            <h3 class="post-subtitle">La gemoterapia es una pseudociencia que afirma que a través de lo que actualmente
+                                 se conoce como gemas, cristales o minerales, se extraen no sólo numerosos nutrientes
+                                 de la naturaleza, sino también energía natural que establece el flujo de energía en
+                                 el cuerpo, el equilibrio físico, mental, emocional y espiritual de una persona.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posteado por
+                            <a href="#!">BLOGBLOGBLOG</a>
+                            enero 2, 2023
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="detallesTitulo.html">
+                            <h2 class="post-title">NEW YEAR, NEW MILEY.</h2>
+                            <h3 class="post-subtitle">Previamente a confirmar su próximo single, Miley llenó las calles del mundo 
+                                con carteles avisando que se venía esta nueva etapa, pero sin muchos detalles más.
+                                Luego, las calles volvieron a ser empapeladas por Miley, esta vez mostrando su cara
+                                 y una frase que probablemente sea parte de su próximo single y causó furor 
+                                en las redes, “I can love me better than you can”, en su traducción, 
+                                “puedo amarme mejor que vos”, además, agregó una fecha de estreno, el 13 de enero.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posteado por
+                            <a href="#!">BLOGBLOGBLOG</a>
+                           enero 2, 2023
+                    </div>
+                   
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

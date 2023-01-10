@@ -1,0 +1,13 @@
+
+{% load static %}
+
+{% block contenido %}
+{% csrf_token %}
+<p> TITULO DEL POST: <i> {{ titulo.titulo }}</i> </p>
+<p> SUBTITULO: <i> {{ titulo.subtitulo }} </i> </p>
+<p>  <i> {{ titulo.contenido }} </i> </p>
+<p>  <i>FECHA: {{ titulo.fecha }} </i> </p>
+<img  class="card-title"  height=" 250 " src="{% if titulo.imagen %} {{ titulo.imagen.url}} {% endif %} ">  
+
+
+{% endblock %}
